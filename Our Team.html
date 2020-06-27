@@ -1,0 +1,79 @@
+<html>
+<head>
+	</head><title>Our Team</title></head>
+	<style>
+	#my_selection{
+	background-color: #000000;
+	color:lime;
+	border: none;
+	border-left: 3px solid lime;
+	opacity: 0.7;
+	outline:none;
+	background-color: #444;
+}
+	</style>
+<label><font color="orange"><b>Please select webpage</b></font></label>
+<select  id="my_selection">
+<option value="x" href="cryptography and network security.html">cryptography and network security</option>
+<option value="y" href="index.html">index</option>
+<option value="x" href="Network Basics.html">Network Basics</option>
+<option value="y" href="Network Devices.html">Network Devices.html</option>
+<option value="y" href="Osi Model.html">Osi Model</option>
+<option value="y" href="Our Team.html">Our Team</option>
+<option value="y" href="Home.html">Home</option>
+
+
+</select>
+
+<script>
+document.getElementById('my_selection').onchange = function() {
+    window.location.href = this.children[this.selectedIndex].getAttribute('href');
+}
+</script>
+	<h1><center><font face="Bookman Old style" color="orange"><u>NETSITE TEAM</u></font></center></h1>
+	<body bgcolor="black">
+		<center><font color="lime" face="candara">
+			
+			
+			<figure>
+				<img src="images/alfred.png" height="200px" width="250px" bgcolor="lime">
+				<br>
+				<figcaption>
+					Alfred Adede is also a student at KCA university pursuing Software Engineering. He has passion for technology and has worked on many projects involving programming and also in the networking field, playing a very important role in the growth of Netsite company.</
+				</figcaption>
+			</figure>
+                        <figure>
+				<img src="images/greg.png" height="200px" width="250px">
+				<figcaption>
+					Gregory Odhiambo is currently a student at KCA university. Gregory is working as a web developer and helps in formatting tutorials in HTML format.He has more than 2 years of experience in Telecom and other networking industries. 
+				</figcaption>
+				</figure>
+			<figure>
+				<img src="images/sebastian.png" style="border:5 solid red" height="200px" width="250px">
+				<figcaption>
+					Sebastian Kipchumba is a student at KCA university, he is a technology enthusiast who has a keen interest in programming and has contributed largely in conducting a lot of networking researches especially in cryptography and network security.
+				</figcaption>
+			</figure>
+			
+			<figure>
+				<img src="images/felix.png" height="200px" width="250px">
+				<figcaption>
+					Felix Simiyu is a B.Sc(Software Engineering) from KCA University. He has 3.5 years of experience as a Quality Analyst and 5+ years of experience in Publishing, Content Management and Content Writing. He is involved in creating, reviewing, modifying and editing the technical writings from publishers and freelancers.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="images/wafula.png" height="200px" width="250px">
+				<figcaption>
+					 Wafula Benedict is a B.Sc specialized in Graphics & Animation having 4.5 years of experience in creative field. He works on graphical enrichment of this web site.
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="images/brian.png" height="200px" width="250px">
+				<figcaption>
+					Benedict Kimathi is B.Sc. from Kca university. He has one year of experience as a Web Designer and Graphics Design. Thomas is involved in formatting tutorials in HTML format and helps in Mobile Apps creation
+				</figcaption>
+			</figure>
+		</font>
+	</center>
+</html>

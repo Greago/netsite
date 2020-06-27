@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cryptography and Network Security</title>
+</head>
+<style>
+#my_selection{
+	background-color: #000000;
+	color:lime;
+	border: none;
+	border-left: 3px solid lime;
+	opacity: 0.7;
+	outline:none;
+	background-color: #444;
+}
+</style>
+<label><font color="orange"><b>Please select webpage</b></font></label>
+<select  id="my_selection">
+<option value="x" href="Home.html">Home</option>
+<option value="y" href="index.html">index</option>
+<option value="x" href="Network Basics.html">Network Basics</option>
+<option value="y" href="Network Devices.html">Network Devices.html</option>
+<option value="y" href="Osi Model.html">Osi Model</option>
+<option value="y" href="Our Team.html">Our Team</option>
+</select>
+
+<script>
+document.getElementById('my_selection').onchange = function() {
+    window.location.href = this.children[this.selectedIndex].getAttribute('href');
+}
+</script>
+<body bgcolor="black">
+	<h1><center><u><font face="candara" color="orange">Cryptography and Network Security</font></u></center></h1>
+	<center><figure><img src="images/William Stallings.png" border="1" height="220" width="180"><figcaption><font color="white">Recommended book</font></figcaption></figure>
+		<font color="lime" face="Bookman Old style"><p><text="align-left">In Cryptography and Network Security, we are going to major on two broad areaas: cryptographic algorithms and protocols, which have a broad range of applications; and network and internet security, which rely heavily on cryptographic techniques.Cryptographic algorithms and protocols can be grouped in four main areas:
+			<ul>
+				<li><b>Symmetric encription</b>: <i>Used to conceal the contents blocks or streams of data of any size, including messages, files, encription keys, and passwords.</i></li>
+				<li><b>Asymmetric encription</b>: <i>Used to conceal small blocks of data, such as encription keys and hash function values, which are used in digital signatures.</i></li>
+				<li><b>Data Integrity Algorithms</b>: <i>Used to protect blocks of data, such as messages, from alteration</i></li>
+				<li><b>Authentication Protocols</b>: <i>These are schemes based on the use of crptographic algorithms designed to authenticate the identity of entities.</i></li>
+		</text><p></font>
+			<p><font color="lime" face="Bookman Old style"> The field of <b>network and Internet Security</b> consists of measures to deter, prevent, detect, and correct security violations that involve the transmission of information. That is a broad statement that covers a host of possibilities.</font></p>
+<font color="lime" size="5"><center><strong><u>cryptography</u></strong></center></font>
+<br>
+<font color="lime" face="Bookman Old style">
+<p><bold>Cryptography</bold> is the study and practice of techniques for secure communication in the presence of third parties called adversaries. It deals with developing and analyzing protocols which prevents malicious third parties from retrieving information being shared between two entities thereby following the various aspects of information security.</p>
+
+<p>Secure Communication refers to the scenario where the message or data shared between two parties can’t be accessed by an adversary. In Cryptography, an Adversary is a malicious entity, which aims to retrieve precious information or data thereby undermining the principles of information security.</p>
+
+<p>Data Confidentiality, Data Integrity, Authentication and Non-repudiation are core principles of modern-day cryptography.</p>
+<ol>
+<li>Confidentiality refers to certain rules and guidelines usually executed under confidentiality agreements which ensure that the information is restricted to certain people or places.</li>
+<li>Data integrity refers to maintaining and making sure that the data stays accurate and consistent over its entire life cycle.</li>
+<li>Authentication is the process of making sure that the piece of data being claimed by the user belongs to it.</li>
+<li>Non-repudiation refers to ability to make sure that a person or a party associated with a contract or a communication cannot deny the authenticity of their signature over their document or the sending of a message.</li>
+<font>
+</body>
+</html>

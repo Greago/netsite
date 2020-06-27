@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Network Communication Devices</title>
+</head>
+<style>
+#my_selection{
+	background-color: #000000;
+	color:lime;
+	border: none;
+	border-left: 3px solid lime;
+	opacity: 0.7;
+	outline:none;
+	background-color: #444;
+}
+</style>
+<label><font color="orange"><b>Please select webpage</b></font></label>
+<select  id="my_selection">
+<option value="x" href="cryptography and network security.html">cryptography and network security</option>
+<option value="y" href="index.html">index</option>
+<option value="x" href="Network Basics.html">Network Basics</option>
+<option value="y" href="Network Devices.html">Network Devices.html</option>
+<option value="y" href="Osi Model.html">Osi Model</option>
+<option value="y" href="Our Team.html">Our Team</option>
+<option value="y" href="Home.html">Home</option>
+
+
+</select>
+
+<script>
+document.getElementById('my_selection').onchange = function() {
+    window.location.href = this.children[this.selectedIndex].getAttribute('href');
+}
+</script>
+<body bgcolor="black">
+	<h1><center><font face="candara" color="orange"><u>Network Communication devices</u></font></center></h1>
+<p><font face="Bookman Old style" color="lime"> Some examples of the data communication devices include <i>Network interface cards(NIC), Modems and Codecs, hubs, bridges, repeaters, routers, gateways, switches and access points.</i></font></p>
+<p><font face="Bookman Old style" color="lime">
+	<p>
+<u>Router</u>
+<ul>
+<li>A device that connects any number of LANs.</li>
+<li>Uses standardized protocols to move packets efficiently to their destination.</li>
+</li>More sophisticated than bridges, connecting networks of different types (for example, star and token ring)</li>
+<li>Forwards data depending on the Network address (IP), not the Hardware (MAC) address.</li>
+<li>Routers are the only one of these four devices that will allow you to share a single IP address among multiple network clients.</li>
+<li>Resides on Layer 3 of the OSI model.</li>
+</p>
+<br>
+<u>Hub</u>
+<ul>
+<li>An unintelligent network device that sends one signal to all of the stations connected to it.</li>
+<li>All computers/devices are competing for attention because it takes the data that comes into a port and sends it out all the other ports in the hub.</li> 
+<li>Traditionally, hubs are used for star topology networks, but they are often used with other configurations to make it easy to add and remove computers without bringing down the network.</li> 
+<li>Resides on Layer 1 of the OSI model</li></ul>
+<br>
+<u>Switch</u>
+<li>Split large networks into small segments, decreasing the number of users sharing the same network resources and bandwidth.</li> 
+<li>Understands when two devices want to talk to each other, and gives them a switched connection.</li> 
+<li>Helps prevent data collisions and reduces network congestion, increasing network performance.</li>
+<li>Most home users get very little, if any, advantage from switches, even when sharing a broadband connection.</li>
+<li>Resides on Layer 2 of the OSI model.</li>
+<br></ul>
+
+<marquee direction="left">
+<img src="images/10.jpg" height="180" width="300"> 
+<img src="images/router.png" height="180" width="300"><
+<img src="images/hub.png" height="180" width="300">
+<img src="images/repeater.png" height="180" width="300">
+</marquee>
+<u>Additional Network Hardware Devices</u>
+<br>
+<br>
+<i>Network Interface Cards (NICs)</i>
+Puts the data into packets and transmits packet onto the network.
+May be wired or wireless.
+<i>Gateway</i>
+Connects networks with different protocols like TCP/IP network. 
+Routers and Gateways often refer to the same device.
+<i>Proxy server</i>
+Isolates inter0nal network computers from the internet. 
+The user first access the proxy server and the proxy server accesses the internet and retrieves the requested web page or document. The user then gets a copy of that page from the proxy server. 
+</font></p>
+</center>
+</body>
+</html>

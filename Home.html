@@ -1,0 +1,65 @@
+<html>
+<style>
+#my_selection{
+	background-color: #000000;
+	color:lime;
+	border: none;
+	border-left: 3px solid lime;
+	opacity: 0.7;
+	outline:none;
+	background-color: #444;
+}
+#glow{
+	color: orange;
+	font-family: alegreya;
+	font-size: 18px;
+	webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate ;
+}
+@-webkit-keyframes glow{
+	from{ text-shadow: 0 0 20px red, 0 0 40px lime, 0 0 60px orange;}
+      to{text-shadow: 0 0 20px red, 0 0 40px lime, 0 0 60px orange, 0 0 70px red; }
+      
+}
+.opt{
+text-transform: uppercase;
+color: lime;
+}
+.opt:hover{
+	color:orange;
+	font-family: arial black;
+}
+</style>
+<label><b id="glow">Please select webpage</b></label>
+<select id="my_selection">
+<option class="opt" value="x" href="cryptography and network security.html">cryptography and network security</option>
+<option class="opt" value="y" href="index.html">index</option>
+<option class="opt" value="x" href="Network Basics.html">Network Basics</option>
+<option class="opt" value="y" href="Network Devices.html">Network Devices.html</option>
+<option class="opt" value="y" href="Osi Model.html">Osi Model</option>
+<option class="opt" value="y" href="Our Team.html">Our Team</option>
+<option class="opt" value="y" href="Home.html">Home</option>
+
+
+</select>
+
+<script>
+document.getElementById('my_selection').onchange = function() {
+    window.location.href = this.children[this.selectedIndex].getAttribute('href');
+}
+</script>
+<bodybgcolor="black">
+<body bgcolor="black">
+
+
+<h1><u><font color="orange" face="candara"><center>Computer Network</center></font></u></h1>
+
+<p><font color="lime" face="Bookman Old style">A computer network is a group of interconnected computers.
+
+It allows computers to communicate with each other and to share resources and information. 
+
+First Network : The Advanced Research Projects Agency (ARPA) funded the design of the "Advanced Research Projects Agency Network" (ARPANET) for the United States Department of Defense</font></p>
+<center><img src="images/history.png" height="2400px" width="1000px"></center>
+</body>
+</html>

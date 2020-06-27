@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NETSITE</title>
+</head>
+<style>
+#button{
+	padding: 3px;
+	color:black;
+	background-color: orange;
+	border: none;
+	text-align: center;
+	border-radius: 10px;
+	text-transform: uppercase;
+	width: 150px
+}
+#button:hover{
+	background-color: #2ecc71;
+	padding:4px;
+	box-shadow: 2px 2px 50px 2px lime;
+	cursor: pointer;
+	color: black;
+	border:none;
+	font-family: alegreya;
+	text-transform: uppercase;
+}
+.glow{
+	font-family: arial-black;
+	color:lime;
+	font-size: 20px;
+	webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow{
+	 from{
+	 	text-shadow: 0 0 20px lime, 0 0 40px lime, 0 0 60px lime;
+	 }
+}
+#company{
+	animation: spin 8s infinite linear;
+}
+@keyframes spin{
+	from{ transform:rotateY(0deg);}
+	to{ transform:rotateY(-360deg);}
+}
+</style>
+<body bgcolor="black" text="yellow">
+	<br>
+<center><img src="images/network.png" height="100px" width="auto">
+<br>
+<hr width=96% size="2" color="orange">
+
+<center>
+	<font ><input id="button" value="HOME" onclick="javascript:window.open('home.html')">&nbsp;&nbsp;&nbsp;&nbsp;<input id="button" value="NETWORK BASICS" onclick="javascript:window.open('Network Basics.html')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="button" value="Network Devices" onclick="javascript:window.open('Network Devices.html')">&nbsp;&nbsp;&nbsp;<input id="button" value="osi model" onclick="javascript:window.open('osi model.html')">&nbsp;&nbsp;&nbsp;&nbsp;<input id="button" value="our team" onclick="javascript:window.open('Our Team.html')">&nbsp;&nbsp;&nbsp;&nbsp;<input id="button" width="230px"value="network security" onclick="javascript:window.open('cryptography and network security.html')">&nbsp;&nbsp;&nbsp;&nbsp;<input id="button" value="Network quiz" onclick="javascript:window.open('quiz.html')">
+
+<hr width=96% size="2" color="orange">
+<br>
+<br>
+	</center>
+<img src="images/1.jpg" height="180" width="300">
+<img src="images/2.jpg" height="180" width="300">
+<img src="images/3.jpg" height="180" width="300">
+<img src="images/4.jpg" height="180" width="300">
+<img src="images/5.jpg" height="180" width="300">
+<img src="images/6.jpg" height="180" width="300">
+<img src="images/7.jpg" height="180" width="300">
+<img src="images/8.jpg" height="180" width="300">
+
+<br>
+<br>
+<br>
+<Center><marquee behaviour= alternate width="190" scrollamount="8" scrolldelay="95" height="50" bgcolor="black"><font color="orange" face="Times new roman"><h2>ABOUT US</h2></marquee></Center>
+<font face="candara" color="orange"><h2 id="company"><b><p><mark><center>Company</center></mark></p></b></h2>
+	<p class="glow">Netsite is a resource like any other that is meant to give knowledge concerning networking. It originated from the idea that there exists a class of readers who respond better to online content and prefer to learn new skills at there own comforts, AS a result we were inpired to come up with the <i>Netsite</i> which provides a wide range of topics based on networking and it principles.</p>
+	<cemter>
+		<center><p><font face="alegereya" color="orange"><strong>&copy; All rights reserved 2019</strong></font></p></center>
+</body>
+</html>
