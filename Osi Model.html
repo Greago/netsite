@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Osi Model</title>
+</head>
+<style>
+#my_selection{
+	background-color: #000000;
+	color:lime;
+	border: none;
+	border-left: 3px solid lime;
+	opacity: 0.7;
+	outline:none;
+	background-color: #444;
+}
+</style>
+<label><font color="orange"><b>Please select webpage</b></font></label>
+<select id="my_selection">
+<option value="x" href="cryptography and network security.html">cryptography and network security</option>
+<option value="y" href="index.html">index</option>
+<option value="x" href="Network Basics.html">Network Basics</option>
+<option value="y" href="Network Devices.html">Network Devices.html</option>
+<option value="y" href="Osi Model.html">Osi Model</option>
+<option value="y" href="Our Team.html">Our Team</option>
+<option value="y" href="Home.html">Home</option>
+
+
+</select>
+
+<script>
+document.getElementById('my_selection').onchange = function() {
+    window.location.href = this.children[this.selectedIndex].getAttribute('href');
+}
+</script>
+<body bgcolor="black">
+<center><font color="orange" face="candara"><h1><U>OSI MODEL</U></h1></font></center>
+<center>
+<figure><img src="images/osi.png" height="600px" width="1100px"><figcaption><font color="lime" face="bookman old style">Summary of the OSI model</font></figcaption></figure>
+<br>
+<font color="lime" face="bookman old style" size="5"><strong><u>The Application Layer</u></strong></font>
+<font color="lime" face="bookman old style"><p>This is the last and the topmost layer of the OSI model. This layer provides an interface between application programs running in system and network. If any application needs to access any resource that is available in remote system, it interacts with this layer. Then this layer encompasses the protocols and services that the application will employ to access that resources.</p>
+
+<p>There are two types of application programs; network-aware and network-unaware. An application program is considered as network-aware when it can make any sort of network request. If an application program can’t make any kind of network request, it is considered as network-unaware program.</p>
+<p>Network-aware programs are further divided in two categories;
+<ul>
+<li>Programs which are mainly created to work in local system but if require can connect with remote system such as MS-Word, Adobe-Photoshop, VLC Player, etc.</li>
+<li>Programs which are mainly created to work with remote system such as SSH, FTP, TFTP, etc.</li>
+</ul>
+Only the programs which fall in second type are referred in application layer. It doesn’t mean that first type of programs can’t take the advantage of application layer. It simply means that, they are not documented in application layer. But if require, they can also connect with the network through the application layer.</p>
+</font>
+<font color="lime" face="bookman old style" size="5"><strong><u>The Presentation Layer</u></strong></font>
+<p><font color="lime" face="bookman old style">The sixth layer of OSI model is the Presentation layer. Applications running in local system may or may not understand the format that is used to transmit the data across the network. The presentation layer works as the translator in OSI model. When receiving data from application layer, it converts that data in such a format that can be sent over the network. When receiving data from session layer, it reconverts that data in such a format that the application which will use the incoming data can understand.</font/></p>
+
+<font color="lime" face="bookman old style" size="5"><strong><u>The Session Layer</u></strong></font>
+<p><font color="lime" face="bookman old style">The session layer is the fifth layer of OSI model. It is responsible for setting up, managing, and dismantling sessions between presentation layer entities and providing dialogs between computers.
+
+<p>When an application makes a network request, this layer checks whether the requested resource is available in local system or in remote system. If requested resource is available in remote system, it tests whether a network connection to access that resource is available or not. If network connection is not available, it sends an error message back to the application informing that connection is not available.</p>
+
+<p>If network connection is available, it establishes a session with remote system. For each individual request, it uses a separate session. This allows multiple applications to send or receive data simultaneously. When data transmission is completed, it terminates the session.</font></p>
+
+<font color="lime" face="bookman old style" size="5"><strong><u>The Transport Layer</u></strong></font>
+<p><font color="lime" face="bookman old style">The transport layer is the fourth layer of OSI model. It provides following functionality: -
+<p><u>segmentation</u>
+On sending computer, it breaks data stream into smaller pieces before transmission. Each piece is known as segment and the process of breaking data into smaller pieces is known as segmentation. On receiving computer, it joins all segments back in data stream. So the upper layers receive data in the format in which it was sent.</p>
+<p><u>Data transportation</u>
+This layer establishes a logical connection between sending system and receiving system and uses that connection to provide end-to-end data transportation. For data transportation, it mainly uses two protocols; TCP and UDP.
+
+TCP protocol is used for reliable data transportation. TCP is a connection-oriented protocol. UDP protocol is used for unreliable data transportation. UDP is a connection-less protocol.
+
+Main difference between a connection-less and connection-oriented protocol is that a connection-oriented protocol provides reliable data delivery. For reliable data delivery, it uses several mechanisms such as, three way handshake process, acknowledgments, sequencing and flow control.</p>
+<p><u>Multiplexing</u>
+Through the use of port numbers, this layer also provides connection multiplexing. Connection multiplexing allows multiple applications to send and receive data simultaneously.</p>
+</font></p>
+<font color="lime" face="bookman old style" size="5"><strong><u>The Network Layer</u></strong></font>
+<p><font color="lime" face="bookman old style">The third layer of OSI model is the Network Layer. This layer takes data segment from transport layer and adds logical address to it. A logical address has two components; network partition and host partition. Network partition is used to group networking components together while host partition is used to uniquely identity a system on a network. Logical address is known as IP address. Once logical address and other related information are added in segment, it becomes packet.
+
+This layer decides whether the packet is intended for local system or remote system. It also specifies the standards and protocols which are used to move the data packets across the networks.
+
+To move data packet between two different networks, a device known as router is used. Router uses logical address to take routing decision. Routing is a process of forwarding data packet to its destination.</p>
+
+</font>
+
+<font color="lime" face="bookman old style" size="5"><strong><u>The Data Link Layer</u></strong></font>
+<p><font color="lime" face="bookman old style"><p>
+The Data Link Layer is the second layer of OSI model. This layer defines how networking components access the media and what transmission methods they use. This layer has two sub-layers; MAC and LLC.</p>
+<p><u>MAC (Media Access Control)</u>
+This sub layer defines how the data packets are placed in media. It also provides physical addressing. Physical address is known as MAC address. Unlike logical addresses which need to be configured, physical addresses are pre-configured in NIC. MAC address is used to uniquely identify a host in local network.</p>
+<p><u>LLC (Logical Link Control)</u>
+This sub layer identifies the network layer protocol. On sending computer, it encapsulates the information of the Network Layer protocol in LLC header from which the Data Link layer receives the data packet. On receiving computer, it checks the LLC header to get the information about the network layer protocol. This way a data packet is always delivered to the same network layer protocol from which it was sent.</p></font>
+
+<font color="lime" face="bookman old style" size="5"><strong><u>The Physical Layer</u></strong></font>
+<p><font color="lime" face="bookman old style">The Physical Layer is the first layer of OSI model. This layer specifies the standards for devices, media and technologies which are used in moving the data across the network such as:-
+
+<p>Type of cable used in connecting the devices</p>
+<p>Patterns of pin used in both sides of cable</p>
+<p>Type of interface card used in networking device</p>
+<p>Type of connector used to connect the cable with network interface</p>
+<p>Encoding of digital signals received from the Data Link layer based on the attached media type such as electrical for copper, light for fiber, or a radio wave for wireless.</p>
+
+On sending computer, it converts digital signals received from the Data Link layer, in analog signals and loads them in physical media. On receiving computer, it picks analog signals from media and converts them in digital signals and transfers them to the Data Link layer for further processing.</font></p>
+
+</body>
+</html>

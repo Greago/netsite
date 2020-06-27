@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>garry</title>
+</head>
+<style>
+#my_selection{
+	background-color: #000000;
+	color:lime;
+	border: none;
+	border-left: 3px solid lime;
+	opacity: 0.7;
+	outline:none;
+	background-color: #444;
+}
+</style>
+<label><font color="orange"><b>Please select webpage</b></font></label>
+<select  id="my_selection">
+<option value="x" href="cryptography and network security.html">cryptography and network security</option>
+<option value="y" href="index.html">index</option>
+<option value="x" href="Network Basics.html">Network Basics</option>
+<option value="y" href="Network Devices.html">Network Devices.html</option>
+<option value="y" href="Osi Model.html">Osi Model</option>
+<option value="y" href="Our Team.html">Our Team</option>
+<option value="y" href="Home.html">Home</option>
+
+
+</select>
+
+<script>
+document.getElementById('my_selection').onchange = function() {
+    window.location.href = this.children[this.selectedIndex].getAttribute('href');
+}
+</script>
+<body bgcolor="black">
+<h1><center><u><font color="orange" face="candara">Network Basics</font></u></center></h1>
+<center><img src="images/basics.jpg" height="200px" width="600px"></center>
+
+<p><font color="lime" face="Bookman Old style"><h4><u>Communication Model</h4></u>
+
+	<ul>
+		<li>Source:</li>
+		  -generates data to be transmitted
+		  <li>Transmitter:</li>
+		  -converts data to transmittable signals.
+		   <li>Transmission system:</li>
+		   -carries data
+		    <li>Reciever:</li>
+		    -converts recieved signal to data.
+		     <li>Destination:</li>
+		     -Takes incoming data.
+		     <p><font color="lime" face="Bookman Old style"><h4><u>Transmission modes</h4></u>
+		     	There are three modes of data communication namely:
+
+	<ul>
+		<li>Simplex:</li>
+		  -refers to communication in only one direction e.g. one way radio and television broadcast does not allow the listener to communicate back through the reciever.
+		  <li>Half Duplex:</li>
+		  -Refers to cmmunication in both direction but one direction at a time e.g. the two way radio(walkie talkie).
+		   <li>Full duplex transmission:</li>
+		   -Refers to communication in both directions simultaneously e.g. computers sending and recieving data on a network
+		   </ul></font></p>
+		   <p><font color="lime" face="Bookman Old style"><h4><u>Types Of Computer Networks</h4></u>
+		     	Computer networks can be classified using different characteristics and asprcts. However, the common classifications are:
+		     	<br>
+According to geographical size:
+	<ul>
+		<li>Local Area Network(LAN):</li>
+		  -covers small geographical area .
+
+		  <li>Metroplitan Area Network(MAN):</li>
+		  -covers a town or city(metropolitan area).
+
+		   <li>Wide Area Network(WAN):</li>
+		   -covers more than one metropolitan area, country or the entire globe. An example is the internet.
+		   </ul></font></p>
+		    	
+According to communication model applied:
+	<ul>
+		<li>Point-to-point networks:</li>
+		  -the data is sent from one computer to the next through direct links without broadcasting.
+		  <li>Broadcast networks:</li>
+		  -a message is broadcast on the network and is visible to all computers on the network. The destination network/computer picks the message from the medium.
+		   </ul>
+		 
+
+
+
+
+
+</html>
